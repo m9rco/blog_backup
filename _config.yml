@@ -1,0 +1,136 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 无敌小笼包
+subtitle: 
+      - 我可以拒绝自由，因为这是我的自由
+      - 学会习惯一个人，不要总是要人一起
+      - 不到万不得已，不要向别人求助，欠下太多的人情不太好
+      - 不要总是说别人的坏话，不然没人会喜欢你
+      - 要多学点知识，将来的日子需要你好好过，还有你的父母将来要依靠你
+      - 不要以貌取人，外貌并不重要，重要的是人品与气质
+      - 不要总是懦弱，要学会应对与解决困境
+      - 每周打一个电话回家，问候一下家人，家人是世界上永远都不会抛弃你的人，永远包容你的人
+      - 对每个人不要轻易地发脾气，不然很多人都会烦你
+      - 要懂得感恩，对每个对自己好的人要怀着感恩的心，认真对待他们
+      - 机会是留给有准备的人，不要总是等待，不做好准备
+      - 要慢慢地胆大，学会在公众面前讲话
+      - 要学会独立，不要事事想着依赖家人
+      - 作为一个人，多读一点书，增加自己的涵养与知识
+      - 今日事，今日做，不要像以前一样拖拉做事要果断，不要犹豫不决
+      - 要学会节约，要知道金钱来之不易，不要浪费
+      - 要对自己该做的事情负责任，不要推脱，努力做好
+      - 要尽自己最大的力量帮助别人，因为你也曾受到别人的帮助
+      - 要珍惜时间与机会，错过就不会回来
+      - 如果讨厌一个人，不要挂在嘴边，自会让自己更心烦而已
+      - 不要与别人攀比，体谅父母，不要增加家庭负担
+      - 要坚持心中的梦想，要有目标的生活喜欢做一件事，就要坚持下去
+      - 不要轻言放弃，要自信，告诉自己就是最好的
+      - 不要经常上网，不要经常看小说，不要经常熬夜，这些都对身体不太好
+      - 要虚心接受别人的批评，要敢于承认自己的错误
+      - 要学会合作，不要单打独斗，与朋友搞好关系学习更多做人做事的经验
+description:
+author: m9rco
+language: zh-Hans
+timezone:
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://blog.mango16.cc/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: ocean
+
+  # Live2D
+## https://github.com/EYHN/hexo-helper-live2d
+live2d:
+  model: haruto # The model that you are willing to show. default: z16
+  width: 200 # The width of your model. default: 150
+  height: 300 # The height of your model. default: 300
+  scaling: 1 # The scaling of the resolution. default: 2
+  opacityDefault: 1 # The default opacity. default: 0.7
+  opacityHover: 1 # The opacity when hover. default: 1
+  mobileShow: true # Whether to show on mobile devices. default: true
+  mobileScaling: 0.5 # The scaling on mobile. default: 0.5
+  position: right # Which side the model is shown at. default: right
+  horizontalOffset: 0 # The horizontal offset. default: 0
+  verticalOffset: -20 # The offset of the bottom. default: -20
+  id: live2dcanvas # The ID of the live2d element. default: live2dcanvas
+  deviceJsSource: local # The source of the current-device script. default: local
+  
+jsonContent:
+  pages:
+    title: true
+    text: true
+    path: true
+    preview: true
+  posts:
+    title: true
+    text: true
+    path: true
+    preview: true
+
+search:
+  path: search.xml
+  field: post
+  format: html
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+    type: git
+    branch: master
+    repository: 
+      github: git@github.com:m9rco/m9rco.github.io.git
+      coding: git@git.coding.net:marcor/m9rco.git
+
